@@ -21,28 +21,32 @@
 // Operator precedence - Order in which operators are expressed (similar to common math operators) 
 import java.util.Scanner;
 
-
 public class Main {
 
+	public static void main(String[] args) {
 
- public static void main(String[] args) {
+		System.out.println("Enter your name please: ");
+		Scanner sc = new Scanner(System.in);
+		String n = sc.nextLine();
+		System.out.println("Hello " + n + "!");
+		sc.close();
 
-  System.out.println("Enter your name please: ");
-  Scanner sc = new Scanner(System.in);
-  String n = sc.nextLine();
-  System.out.println("Hello " + n + "!");
-  sc.close();
+		Mainvar nMainvar = new Mainvar();
+		Castingex nCastingex = new Castingex();
+		Stringex nStringex = new Stringex();
+		Methodex nMethodex = new Methodex();
+		// WhileLoop nWhileLoop = new WhileLoop();
+		// ForLoop nForLoop = new ForLoop();
+		Break nBreak = new Break();
 
-  Mainvar nMainvar = new Mainvar();
-  Castingex nCastingex = new Castingex();
-  Stringex nStringex = new Stringex();
-  Methodex nMethodex = new Methodex();
+		nMainvar.mainvar(); // Method call
+		nCastingex.castingex(); // Method call
+		nStringex.stringex(); // Method call
+		nMethodex.getsum(); // Method call
+		// nWhileLoop.whileloop(); // Method Call
+		// nForLoop.forloop();
+		nBreak.breakex();
 
-  nMainvar.mainvar(); // Method call
-  nCastingex.castingex(); // Method call
-  nStringex.stringex(); // Method call
-  nMethodex.getsum(); // Method call
-
- }
+	}
 
 }
