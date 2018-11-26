@@ -1,8 +1,8 @@
 import java.util.Random;
 
-public class Methodex {
+ class Methodex {
  // Line #5 is a header a parameter is contained inside the () on line #5
- public int getmin(int num1, int num2) {
+  int getmin(int num1, int num2) {
   int result;
   if (num1 < num2)
    result = num1;
@@ -14,7 +14,7 @@ public class Methodex {
 
 
 
- public void getsum() {
+  void getsum() {
   Random rand = new Random();
   int num3 = 2;
 
@@ -26,7 +26,7 @@ public class Methodex {
 
  }
 
- public void getdrink(String[] args) {
+  void getdrink(String[] args) {
 
   int drink = 2;
   String drinkString;
@@ -44,7 +44,7 @@ public class Methodex {
   System.out.println("Switch example: " + drinkString);
  }
 
- public void compare(String args[]) {
+  void compare(String args[]) {
   String s1 = "I like to drink water";
   String s2 = "I do not like to drink water";
 

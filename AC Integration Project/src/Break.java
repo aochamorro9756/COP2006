@@ -1,6 +1,6 @@
 
-public class Break {
-	public void breakex() {
+ class Break {
+	 void breakex() {
 	      
 	      for (int i = 1; i <= 100; ++i) {      
 	         if (i == 5) {

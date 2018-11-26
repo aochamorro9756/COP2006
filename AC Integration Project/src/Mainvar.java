@@ -1,8 +1,8 @@
 // Using final class to prevent inheritance
 
-public final class Mainvar {
+ final class Mainvar {
 
- public void mainvar() {
+  void mainvar() {
   System.out.println("Below is the demonstration of the use of the four main types of variables");
   // Int - Is 32-bit, and can be useful for normal (whole) numbers
   int num = 10;

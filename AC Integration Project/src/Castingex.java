@@ -1,5 +1,5 @@
-public class Castingex {
- public void castingex() {
+ class Castingex {
+  void castingex() {
   double d = 10.5; // Starts off as double
   long l = (long) d; // Double is casted to long 
   int i = (int) l; // Long is casted to int 

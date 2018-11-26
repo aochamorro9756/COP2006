@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 // Alex Chamorro ;)
 // This is my integration project! Here you will find a demonstration of some of the different java programming skills I have learned so far in COP 2006
 
@@ -19,35 +21,71 @@
 // Final - When the keyword final is used its value can no longer be modified
 // Cast - To change one data type to another 
 // Operator precedence - Order in which operators are expressed (similar to common math operators) 
-import java.util.Scanner;
+// Inheritance - Allows one class to inherit fields and methods from another class. Using inheritance allows you to reduce the amount similar code in your program.
 
 public class Main {
 
 	public static void main(String[] args) {
+//		System.out.println("Enter one of the following commands:");
+	//	System.out.println("1 - Friendly Greeting");
+		//System.out.println("2 - Division of two numbers");
+//		System.out.println("3 - exit");
+	//	Scanner scanchoice = new Scanner(System.in);
+		//System.out.println();
+		//System.out.println("Enter \"1\", \"2\" or \"3\"");
+		//int choiceentry = scanchoice.nextInt();
 
-		System.out.println("Enter your name please: ");
-		Scanner sc = new Scanner(System.in);
-		String n = sc.nextLine();
-		System.out.println("Hello " + n + "!");
-		sc.close();
+		//while (choiceentry != 3) {
 
-		Mainvar nMainvar = new Mainvar();
-		Castingex nCastingex = new Castingex();
-		Stringex nStringex = new Stringex();
-		Methodex nMethodex = new Methodex();
+		  //  if (choiceentry < 1 || choiceentry > 3) {
+
+		    //    System.out.println("Enter \"1\", \"2\", \"3\" or \"4\"");
+		      //  choiceentry = scanchoice.nextInt();
+
+		 //   }
+
+		   // else if(choiceentry == 1) {
+		        // ..do something
+		    	//Intro nIntro = new Intro();
+		    //	nIntro.intro();
+		   // }
+		    //else if(choiceentry == 2) {
+		        //..something else
+		 //   	ExceptionEx nExceptionEx = new ExceptionEx();
+		    //	nExceptionEx.exceptionex();
+		   // }
+		    //else if(choiceentry == 3) {
+		        //...exit program
+	//	    }
+	//	    scanchoice.close();
+
+	//	}   
+		
+		
+		
+		
+		// Mainvar nMainvar = new Mainvar();
+		// Castingex nCastingex = new Castingex();
+		// Stringex nStringex = new Stringex();
+		// Methodex nMethodex = new Methodex();
 		// WhileLoop nWhileLoop = new WhileLoop();
 		// ForLoop nForLoop = new ForLoop();
-		Break nBreak = new Break();
-		OverloadEx nOverloadEx = new OverloadEx();
+		// Break nBreak = new Break();
+		// OverloadEx nOverloadEx = new OverloadEx();
+		Bob nBob = new Bob();
+		
 
-		//nMainvar.mainvar(); // Method call
-		//nCastingex.castingex(); // Method call
-		//nStringex.stringex(); // Method call
-		//nMethodex.getsum(); // Method call
+		
+		// nMainvar.mainvar(); // Method call
+		// nCastingex.castingex(); // Method call
+		// nStringex.stringex(); // Method call
+		// nMethodex.getsum(); // Method call
 		// nWhileLoop.whileloop(); // Method Call
 		// nForLoop.forloop();
-		//nBreak.breakex();
-		nOverloadEx.overloadex();
+		// nBreak.breakex();
+		// nOverloadEx.overloadex();
+		nBob.bob();
+		
 
 	}
 

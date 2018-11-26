@@ -1,6 +1,6 @@
-public class Stringex {
+ class Stringex {
 
- public void stringex() {
+  void stringex() {
   String str1 = "IS WATER WET?"; // Original 
   String conv1 = str1.toLowerCase(); // Converts all uppercase letters to lowercase 
   String conv2 = str1.substring(9, 13); // Snips a selected portion of the string and outputs it
