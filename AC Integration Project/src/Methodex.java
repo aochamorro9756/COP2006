@@ -8,8 +8,8 @@ import java.util.Random;
    result = num1;
   else
    result = num2;
-
   return result;
+  
  }
 
 
@@ -23,6 +23,8 @@ import java.util.Random;
   num5 += 5.4;
   int sum = (int)(num3 + Math.sqrt(num4)); //Argument 
   System.out.println("Example of random & math class & other requirements: " + (sum++ + sum-- + num5 + (num4 % num5)) / (sum * num5 - (num5)));
+  Intro nIntro = new Intro();
+	nIntro.entertocontinue();
 
  }
 
@@ -42,6 +44,8 @@ import java.util.Random;
     break;
   }
   System.out.println("Switch example: " + drinkString);
+  Intro nIntro = new Intro();
+	nIntro.entertocontinue();
  }
 
   void compare(String args[]) {
@@ -51,7 +55,8 @@ import java.util.Random;
 
   int var1 = s1.compareTo(s2);
   System.out.println("s1 & s2 comparison: " + var1); // == is the Java equivalent to an equals sign. It is used to see if two objects are equal. 
-
+  Intro nIntro = new Intro();
+	nIntro.entertocontinue();
 
 
  }

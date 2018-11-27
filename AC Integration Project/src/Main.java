@@ -26,67 +26,93 @@ import java.util.Scanner;
 public class Main {
 
 	public static void main(String[] args) {
-//		System.out.println("Enter one of the following commands:");
-	//	System.out.println("1 - Friendly Greeting");
-		//System.out.println("2 - Division of two numbers");
-//		System.out.println("3 - exit");
-	//	Scanner scanchoice = new Scanner(System.in);
-		//System.out.println();
-		//System.out.println("Enter \"1\", \"2\" or \"3\"");
-		//int choiceentry = scanchoice.nextInt();
+		try {
+		System.out.println("Enter one of the following commands:");
+		System.out.println("1 - Friendly Greeting");
+		System.out.println("2 - Division of two numbers");
+		System.out.println("3 - Mainvar");
+		System.out.println("4 - Casting Example");
+		System.out.println("5 - String Example");
+		System.out.println("6 - Method Example");
+		System.out.println("7 - While Loop Example");
+		System.out.println("8 - For Loop Example");
+		System.out.println("9 - Enhanced For Loop Example");
+		System.out.println("10 - Break Example");
+		System.out.println("11 - Overload Example");
+		System.out.println("12 - Super Example");
+		System.out.println("13 - Polymorphism Example");
+		System.out.println("14 - Array Example");
+		System.out.println("15 - exit");
+		Scanner scanchoice = new Scanner(System.in);
+		System.out.println();
+		System.out.println("Enter a number to continue: ");
+		int choiceentry = scanchoice.nextInt();
 
-		//while (choiceentry != 3) {
+		while (choiceentry != 15) {
 
-		  //  if (choiceentry < 1 || choiceentry > 3) {
+			if (choiceentry < 1 || choiceentry > 15) {
 
-		    //    System.out.println("Enter \"1\", \"2\", \"3\" or \"4\"");
-		      //  choiceentry = scanchoice.nextInt();
+				System.out.println("Invalid input. Please Try again.");
+				Intro nIntro = new Intro();
+				nIntro.entertocontinue();
+				
+				choiceentry = scanchoice.nextInt();
 
-		 //   }
+			} else if (choiceentry == 1) {
+				Intro nIntro = new Intro();
+				nIntro.intro();
+			} else if (choiceentry == 2) {
+				ExceptionEx nExceptionEx = new ExceptionEx();
+				nExceptionEx.exceptionex();
+			} else if (choiceentry == 3) {
+				Mainvar nMainvar = new Mainvar();
+				nMainvar.mainvar();
+			} else if (choiceentry == 4) {
+				Castingex nCastingex = new Castingex();
+				nCastingex.castingex();
+			} else if (choiceentry == 5) {
+				Stringex nStringex = new Stringex();
+				nStringex.stringex();
+			} else if (choiceentry == 6) {
+				Methodex nMethodex = new Methodex();
+				nMethodex.getsum();
+			} else if (choiceentry == 7) {
+				WhileLoop nWhileLoop = new WhileLoop();
+				nWhileLoop.whileloop();
+			} else if (choiceentry == 8) {
+				ForLoop nForLoop = new ForLoop();
+				nForLoop.forloop();
+			} else if (choiceentry == 9) {
+				EnForLoop nEnForLoop = new EnForLoop();
+				nEnForLoop.enforloop();
+			} else if (choiceentry == 10) {
+				Break nBreak = new Break();
+				nBreak.breakex();
+			} else if (choiceentry == 11) {
+				OverloadEx nOverloadEx = new OverloadEx();
+				nOverloadEx.overloadex();
+			} else if (choiceentry == 12) {
+				Bob nBob = new Bob();
+				nBob.bob();
+			} else if (choiceentry == 13) {
+				Polymorphism nPolymorphism = new Polymorphism();
+				nPolymorphism.polymorphism();
+			} else if (choiceentry == 14) {
+				ArrayEx nArrayEx = new ArrayEx();
+				nArrayEx.arrayex();
+			} else if (choiceentry == 15) {
+				// exit
+				System.exit(0);
+			}
+			scanchoice.close();
 
-		   // else if(choiceentry == 1) {
-		        // ..do something
-		    	//Intro nIntro = new Intro();
-		    //	nIntro.intro();
-		   // }
-		    //else if(choiceentry == 2) {
-		        //..something else
-		 //   	ExceptionEx nExceptionEx = new ExceptionEx();
-		    //	nExceptionEx.exceptionex();
-		   // }
-		    //else if(choiceentry == 3) {
-		        //...exit program
-	//	    }
-	//	    scanchoice.close();
-
-	//	}   
-		
-		
-		
-		
-		// Mainvar nMainvar = new Mainvar();
-		// Castingex nCastingex = new Castingex();
-		// Stringex nStringex = new Stringex();
-		// Methodex nMethodex = new Methodex();
-		// WhileLoop nWhileLoop = new WhileLoop();
-		// ForLoop nForLoop = new ForLoop();
-		// Break nBreak = new Break();
-		// OverloadEx nOverloadEx = new OverloadEx();
-		Bob nBob = new Bob();
-		
-
-		
-		// nMainvar.mainvar(); // Method call
-		// nCastingex.castingex(); // Method call
-		// nStringex.stringex(); // Method call
-		// nMethodex.getsum(); // Method call
-		// nWhileLoop.whileloop(); // Method Call
-		// nForLoop.forloop();
-		// nBreak.breakex();
-		// nOverloadEx.overloadex();
-		nBob.bob();
-		
+		}
+		}
+		catch(Exception e) {
+			System.out.println("An error has occured!!");
+			Intro nIntro = new Intro();
+			nIntro.entertocontinue();
+		}
 
 	}
-
 }

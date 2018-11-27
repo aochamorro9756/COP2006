@@ -16,5 +16,7 @@
   System.out.println("Double: " + dub);
   System.out.println("Int: " + num);
   System.out.println("String: " + example);
+  Intro nIntro = new Intro();
+	nIntro.entertocontinue();
  }
 }
