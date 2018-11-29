@@ -34,6 +34,7 @@ public class Main {
   public static void main(String[] args) {
     Main nMenu = new Main();
     nMenu.mainMenu();
+    
   }
 
   public void mainMenu() {
