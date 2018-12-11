@@ -7,7 +7,7 @@ class DoWhileLoop {
       System.out.println(i); // Similar to my while loop but formatted to be used as a do/while loop
       i--;
     } while (i > 1);
-    Intro nIntro = new Intro();
-    nIntro.entertocontinue();
+    Intro intro = new Intro();
+    intro.entertocontinue();
   }
 }

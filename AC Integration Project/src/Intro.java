@@ -11,8 +11,8 @@ class Intro {
       String n = sc.nextLine();
       System.out.println("Hello " + n + "!");
 
-      Intro nIntro = new Intro();
-      nIntro.entertocontinue();
+      Intro intro = new Intro();
+      intro.entertocontinue();
     } catch (Exception e) {
       System.out.println("Error!");
     }
@@ -21,12 +21,10 @@ class Intro {
   public void entertocontinue() {
     final Scanner sc2 = new Scanner(System.in);
     System.out.println("Enter any value then press enter to return to the main menu");
-    if (sc2.hasNextLine()) {
 
-    }
     sc2.next();
-    Main nMenu = new Main();
-    nMenu.mainMenu();
+    Main menu = new Main();
+    menu.mainMenu();
     sc2.close();
 
   }

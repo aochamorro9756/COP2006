@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 // Alex Chamorro ;)
+
 // This is my integration project! Here you will find a demonstration of some of the different java
 // programming skills I have learned so far in COP 2006
 
@@ -29,15 +30,28 @@ import java.util.Scanner;
 // Inheritance - Allows one class to inherit fields and methods from another class. Using
 // inheritance allows you to reduce the amount similar code in your program.
 
+/**
+ * This is the Main class which helps the user interact with the program.
+ * 
+ * @author Alex Chamorro
+ */
 public class Main {
-
+  /**
+   * This redirects the users to the main menu.
+   * 
+   */
   public static void main(String[] args) {
-    Main nMenu = new Main();
-    nMenu.mainMenu();
-    
+
+    Main menu = new Main();
+    menu.mainMenu();
+
   }
 
+  /**
+   * This is the main menu which allows users to easily navigate to certain parts of my program.
+   */
   public void mainMenu() {
+
     try {
       System.out.println("Enter one of the following commands:");
       System.out.println("1 - Friendly Greeting");
@@ -65,53 +79,53 @@ public class Main {
         if (choiceentry < 1 || choiceentry > 17) {
 
           System.out.println("Invalid input. Please Try again.");
-          Intro nIntro = new Intro();
-          nIntro.entertocontinue();
+          Intro intro = new Intro();
+          intro.entertocontinue();
 
           choiceentry = scanchoice.nextInt();
 
         } else if (choiceentry == 1) {
-          Intro nIntro = new Intro();
-          nIntro.intro();
+          Intro intro = new Intro();
+          intro.intro();
         } else if (choiceentry == 2) {
-          ExceptionEx nExceptionEx = new ExceptionEx();
-          nExceptionEx.exceptionex();
+          ExceptionEx exceptionex = new ExceptionEx();
+          exceptionex.exceptionex();
         } else if (choiceentry == 3) {
-          Mainvar nMainvar = new Mainvar();
-          nMainvar.mainvar();
+          Mainvar mainvar = new Mainvar();
+          mainvar.mainvar();
         } else if (choiceentry == 4) {
-          Castingex nCastingex = new Castingex();
-          nCastingex.castingex();
+          Castingex castingex = new Castingex();
+          castingex.castingex();
         } else if (choiceentry == 5) {
-          Stringex nStringex = new Stringex();
-          nStringex.stringex();
+          Stringex stringex = new Stringex();
+          stringex.stringex();
         } else if (choiceentry == 6) {
-          Methodex nMethodex = new Methodex();
-          nMethodex.getsum();
+          Methodex methodex = new Methodex();
+          methodex.getsum();
         } else if (choiceentry == 7) {
-          WhileLoop nWhileLoop = new WhileLoop();
-          nWhileLoop.whileloop();
+          WhileLoop whileloop = new WhileLoop();
+          whileloop.whileloop();
         } else if (choiceentry == 8) {
-          ForLoop nForLoop = new ForLoop();
-          nForLoop.forloop();
+          ForLoop forloop = new ForLoop();
+          forloop.forloop();
         } else if (choiceentry == 9) {
-          EnForLoop nEnForLoop = new EnForLoop();
-          nEnForLoop.enforloop();
+          Enforloop enforloop = new Enforloop();
+          enforloop.enforloop();
         } else if (choiceentry == 10) {
-          Break nBreak = new Break();
-          nBreak.breakex();
+          Break breakbreak = new Break();
+          breakbreak.breakex();
         } else if (choiceentry == 11) {
-          OverloadEx nOverloadEx = new OverloadEx();
-          nOverloadEx.overloadex();
+          OverloadedEx overloadedex = new OverloadedEx();
+          overloadedex.overloadedex();
         } else if (choiceentry == 12) {
-          Bob nBob = new Bob();
-          nBob.bob();
+          Bob bob = new Bob();
+          bob.bob();
         } else if (choiceentry == 13) {
-          Polymorphism nPolymorphism = new Polymorphism();
-          nPolymorphism.polymorphism();
+          Polymorphism polymorphism = new Polymorphism();
+          polymorphism.polymorphism();
         } else if (choiceentry == 14) {
-          ArrayEx nArrayEx = new ArrayEx();
-          nArrayEx.arrayex();
+          ArrayEx arrayex = new ArrayEx();
+          arrayex.arrayex();
         } else if (choiceentry == 15) {
           // exit
           System.exit(0);
@@ -121,8 +135,8 @@ public class Main {
       }
     } catch (Exception e) {
       System.out.println("An error has occured!!");
-      Intro nIntro = new Intro();
-      nIntro.entertocontinue();
+      Intro intro = new Intro();
+      intro.entertocontinue();
       throw e;
     }
   }

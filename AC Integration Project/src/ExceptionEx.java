@@ -5,7 +5,9 @@ class ExceptionEx {
 
     try {
 
-      int w, y, z;
+      final int w;
+      final int y;
+      final int z;
 
       System.out.println(
           "This is a demonstration of exception handeling when you try to divide 0 by 0 in java");
@@ -21,16 +23,16 @@ class ExceptionEx {
       z = w / y;
       System.out.println("Result = " + z);
 
-      Intro nIntro = new Intro();
-      nIntro.entertocontinue();
+      Intro intro = new Intro();
+      intro.entertocontinue();
 
 
     } catch (Exception e) {
       System.out.println("*system catches ArithmeticException*");
       System.out
           .println("Because the ArithmeticException was caught the program did not terminate");
-      Intro nIntro = new Intro();
-      nIntro.entertocontinue();
+      Intro intro = new Intro();
+      intro.entertocontinue();
 
 
     }

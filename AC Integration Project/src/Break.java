@@ -2,13 +2,13 @@
 class Break {
   void breakex() {
 
-    for (int i = 1; i <= 100; ++i) {
-      if (i == 5) {
+    for (int i = 1; i <= 100; i++) {
+      if (i == 50) {
         break;
       }
-      System.out.println(i); // Prints numbers 1-100 but then stops when i==5
-      Intro nIntro = new Intro();
-      nIntro.entertocontinue();
+      System.out.println(i); // Prints numbers 1-100 but then stops when i==50
+      Intro intro = new Intro();
+      intro.entertocontinue();
     }
   }
 }

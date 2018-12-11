@@ -9,8 +9,8 @@ class Castingex {
     System.out.println("Double value: " + d);
     System.out.println("Long value: " + l);
     System.out.println("Int value: " + i);
-    Intro nIntro = new Intro();
-    nIntro.entertocontinue();
+    Intro intro = new Intro();
+    intro.entertocontinue();
   }
 
 }
