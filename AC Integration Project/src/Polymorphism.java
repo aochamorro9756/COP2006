@@ -6,11 +6,11 @@ class Polymorphism {
 
     Food vh = new Cheese();
 
-    vh.edible(); // prints MotorBike can move and accelerate too!!
+    vh.edible();
 
     vh = new Food();
 
-    vh.edible(); // prints Vehicles can move!!
+    vh.edible();
     Intro intro = new Intro();
     intro.entertocontinue();
   }
